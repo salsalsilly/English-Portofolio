@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           prefWidth="900" prefHeight="600"
+           style="-fx-background-color: #3E1F0D;">
+
+    <!-- Card Login -->
+    <VBox alignment="CENTER_LEFT" spacing="12"
+          style="-fx-background-color: #FAF3E0;
+                 -fx-background-radius: 14;
+                 -fx-padding: 36 40 36 40;"
+          maxWidth="380" maxHeight="420">
+
+        <!-- Header -->
+        <HBox alignment="CENTER_LEFT" spacing="12">
+            <Label text="👤"  style="-fx-font-size: 28px;"/>
+            <VBox spacing="2">
+                <Label text="LOGIN PETUGAS"
+                       style="-fx-font-size: 16px;
+                              -fx-font-weight: bold;
+                              -fx-text-fill: #3E1F0D;"/>
+                <Label text="Sistem Antrian Qurban"
+                       style="-fx-font-size: 11px;
+                              -fx-text-fill: #8B5E3C;"/>
+            </VBox>
+        </HBox>
+
+        <Separator style="-fx-background-color: #E0C98A;"/>
+
+        <!-- Username -->
+        <Label text="Username"
+               style="-fx-font-size: 12px;
+                      -fx-font-weight: bold;
+                      -fx-text-fill: #5C2E0E;"/>
+        <TextField fx:id="txtUsername"
+                   promptText="Masukkan username"
+                   style="-fx-background-color: white;
+                          -fx-border-color: #D4B870;
+                          -fx-border-radius: 6;
+                          -fx-background-radius: 6;
+                          -fx-padding: 8 12 8 12;
+                          -fx-font-size: 13px;"/>
+
+        <!-- Password -->
+        <Label text="Password"
+               style="-fx-font-size: 12px;
+                      -fx-font-weight: bold;
+                      -fx-text-fill: #5C2E0E;"/>
+        <PasswordField fx:id="txtPassword"
+                       promptText="Masukkan password"
+                       style="-fx-background-color: white;
+                              -fx-border-color: #D4B870;
+                              -fx-border-radius: 6;
+                              -fx-background-radius: 6;
+                              -fx-padding: 8 12 8 12;
+                              -fx-font-size: 13px;"/>
+
+        <Region prefHeight="6"/>
+
+        <!-- Tombol Login -->
+        <Button fx:id="btnLogin" text="Login"
+                onAction="#handleLogin"
+                maxWidth="Infinity"
+                style="-fx-background-color: #5C2E0E;
+                       -fx-text-fill: #FAF3E0;
+                       -fx-font-weight: bold;
+                       -fx-font-size: 13px;
+                       -fx-padding: 10 0 10 0;
+                       -fx-background-radius: 8;
+                       -fx-cursor: hand;"/>
+
+        <Label text="© 2026 Antrian Qurban · PMI"
+               style="-fx-font-size: 10px;
+                      -fx-text-fill: #A0622E;"
+               alignment="CENTER" maxWidth="Infinity"/>
+    </VBox>
+
+</StackPane>
